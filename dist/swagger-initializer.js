@@ -9,7 +9,7 @@ window.onload = function() {
     SwaggerUIBundle.presets.apis,
     SwaggerUIBundle.SwaggerUIStandalonePreset
   ],
-  layout: "StandaloneLayout",
+  layout: "BaseLayout",
   displayRequestDuration: true,
   docExpansion: "none"
       });
