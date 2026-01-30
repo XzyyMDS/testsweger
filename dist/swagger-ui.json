@@ -7,15 +7,16 @@
   },
   "servers": [
     {
-      "url": "https://api.xzyymds.web.id"
+      "url": "https://api.xzyymds.web.id",
+      "description": "Main Server"
     }
   ],
   "paths": {
     "/api/otakudesuongoing": {
       "get": {
-        "tags": ["Testing1"],
-        "summary": "Mengambil daftar pengguna",
-        "description": "Mengambil daftar pengguna yang terdaftar",
+        "tags": ["Anime"],
+        "summary": "",
+        "description": "",
         "responses": {
           "200": {
             "description": "Daftar pengguna berhasil diambil"
