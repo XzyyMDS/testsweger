@@ -12,24 +12,26 @@
   ],
   "paths": {
    "/users": {
-      "get": {
-        "tags": ["Testing1"],
-        "summary": "Mengambil daftar pengguna",
-        "description": "Mengambil daftar pengguna yang terdaftar",
-       "parameters": [
-          {
-            name: "q",
-            in: "query",
-            required: true,
-            schema: { type: "string" }
+    "get": {
+      "tags": ["Testing1"],
+      "summary": "Mengambil daftar pengguna",
+      "description": "Mengambil daftar pengguna yang terdaftar",
+      "parameters": [
+        {
+          "name": "q",
+          "in": "query",
+          "required": true,
+          "schema": {
+            "type": "string"
           }
-        ],
-        "responses": {
-          "200": {
-            "description": "Berhasil mengambil data",
-}
-}
-},
+        }
+      ],
+      "responses": {
+        "200": {
+          "description": "Berhasil mengambil data"
+        }
+      }
+    },
     "/users": {
       "get": {
         "tags": ["Testing"],
