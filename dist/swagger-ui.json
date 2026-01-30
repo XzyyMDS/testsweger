@@ -1,7 +1,7 @@
 {
   "openapi": "3.0.0",
   "info": {
-    "title": "XzyyMDS API",
+    "title": "XzyyMDS API Documentation",
     "description": "Free Rest API For Everyone.",
     "version": "1.0.3"
   },
