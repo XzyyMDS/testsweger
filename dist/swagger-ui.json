@@ -57,14 +57,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Daftar pengguna berhasil diambil",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "string"
-                }
-              }
-            }
+            "description": "Daftar pengguna berhasil diambil"
           }
         }
       }
