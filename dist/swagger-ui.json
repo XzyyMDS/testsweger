@@ -12,23 +12,77 @@
     }
   ],
   "paths": {
-    "/api/otakudesuongoing": {
+    "/api/ytmp4": {
       "get": {
-        "tags": ["Anime"],
+        "tags": ["Downloader"],
         "summary": "",
         "description": "",
+        "parameters": [
+          {
+            "name": "url",
+            "in": "url",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
           "200": {
-            "description": "Daftar pengguna berhasil diambil"
+            "description": "Berhasil mengambil data."
           }
         }
       }
     },
-    "/usr": {
+    "/api/ytmp3": {
       "get": {
-        "tags": ["Testing1"],
-        "summary": "Mengambil daftar pengguna",
-        "description": "Mengambil daftar pengguna yang terdaftar",
+        "tags": ["Downloader"],
+        "summary": "",
+        "description": "",
+        "parameters": [
+          {
+            "name": "url",
+            "in": "url",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Berhasil mengambil data."
+          }
+        }
+      }
+    },
+    "/api/mediafire": {
+      "get": {
+        "tags": ["Downloader"],
+        "summary": "",
+        "description": "",
+        "parameters": [
+          {
+            "name": "url",
+            "in": "url",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Berhasil mengambil data."
+          }
+        }
+      }
+    },
+    "/api/otakudesearch": {
+      "get": {
+        "tags": ["Anime"],
+        "summary": "",
+        "description": "",
         "parameters": [
           {
             "name": "q",
@@ -41,7 +95,129 @@
         ],
         "responses": {
           "200": {
-            "description": "Daftar pengguna berhasil diambil"
+            "description": "Berhasil mengambil data."
+          }
+        }
+      }
+    },
+    "/api/otakudedetails": {
+      "get": {
+        "tags": ["Anime"],
+        "summary": "",
+        "description": "",
+        "parameters": [
+          {
+            "name": "url",
+            "in": "url",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Berhasil mengambil data."
+          }
+        }
+      }
+    },
+    "/api/otakudesuongoing": {
+      "get": {
+        "tags": ["Anime"],
+        "summary": "",
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "Berhasil mengambil data."
+          }
+        }
+      }
+    },
+    "/api/npmsearch": {
+      "get": {
+        "tags": ["Search"],
+        "summary": "",
+        "description": "",
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Data berhasil diambil."
+          }
+        }
+      }
+    },
+    "/api/pinterest": {
+      "get": {
+        "tags": ["Search"],
+        "summary": "",
+        "description": "",
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Berhasil mengambil data."
+          }
+        }
+      }
+    },
+    "/api/playstore": {
+      "get": {
+        "tags": ["Search"],
+        "summary": "",
+        "description": "",
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Berhasil mengambil data."
+          }
+        }
+      }
+    },
+    "/api/ytsearch": {
+      "get": {
+        "tags": ["Search"],
+        "summary": "",
+        "description": "",
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Berhasil mengambil data."
           }
         }
       }
