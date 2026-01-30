@@ -32,26 +32,4 @@
         }
       }
     }
-  },
-  "components": {
-    "schemas": {
-      "User": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "description": "ID pengguna"
-          },
-          "name": {
-            "type": "string",
-            "description": "Nama pengguna"
-          },
-          "email": {
-            "type": "string",
-            "description": "Alamat email pengguna"
-          }
-        }
-      }
-    }
   }
-}
