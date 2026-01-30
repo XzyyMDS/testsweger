@@ -1,0 +1,57 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "API Dokumentasi",
+    "description": "Dokumentasi API untuk aplikasi saya",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000"
+    }
+  ],
+  "paths": {
+    "/users": {
+      "get": {
+        "summary": "Mengambil daftar pengguna",
+        "description": "Mengambil daftar pengguna yang terdaftar",
+        "responses": {
+          "200": {
+            "description": "Daftar pengguna berhasil diambil",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/User"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "User": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "ID pengguna"
+          },
+          "name": {
+            "type": "string",
+            "description": "Nama pengguna"
+          },
+          "email": {
+            "type": "string",
+            "description": "Alamat email pengguna"
+          }
+        }
+      }
+    }
+  }
+}
