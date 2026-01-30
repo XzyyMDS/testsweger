@@ -11,8 +11,7 @@ window.onload = function() {
   ],
   layout: "BaseLayout",
   displayRequestDuration: true,
-  docExpansion: "none",
-  theme: "dark"
+  docExpansion: "none"
       });
   });
 };
