@@ -11,66 +11,31 @@
     }
   ],
   "paths": {
-   "/users": {
-    "get": {
-      "tags": ["Testing1"],
-      "summary": "Mengambil daftar pengguna",
-      "description": "Mengambil daftar pengguna yang terdaftar",
-      "parameters": [
-        {
-          "name": "q",
-          "in": "query",
-          "required": true,
-          "schema": {
-            "type": "string"
-          }
-        }
-      ],
-      "responses": {
-        "200": {
-          "description": "Berhasil mengambil data"
-        }
-      }
-    },
     "/users": {
       "get": {
-        "tags": ["Testing"],
+        "tags": ["Testing1"],
         "summary": "Mengambil daftar pengguna",
         "description": "Mengambil daftar pengguna yang terdaftar",
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "Daftar pengguna berhasil diambil",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/User"
-                  }
+                  "type": "string"
                 }
               }
             }
-          }
-        }
-      }
-    }
-  },
-  "components": {
-    "schemas": {
-      "User": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "description": "ID pengguna"
-          },
-          "name": {
-            "type": "string",
-            "description": "Nama pengguna"
-          },
-          "email": {
-            "type": "string",
-            "description": "Alamat email pengguna"
           }
         }
       }
