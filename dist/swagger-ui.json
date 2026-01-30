@@ -1,9 +1,9 @@
 {
   "openapi": "3.0.0",
   "info": {
-    "title": "API Dokumentasi",
-    "description": "Dokumentasi API untuk aplikasi saya",
-    "version": "1.0.0"
+    "title": "XzyyMDS | Rest API",
+    "description": "Free Rest API For Everyone.",
+    "version": "1.0.3"
   },
   "servers": [
     {
