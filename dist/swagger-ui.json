@@ -13,6 +13,7 @@
   "paths": {
     "/users": {
       "get": {
+        "tags": ["Testing"],
         "summary": "Mengambil daftar pengguna",
         "description": "Mengambil daftar pengguna yang terdaftar",
         "responses": {
