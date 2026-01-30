@@ -10,26 +10,32 @@
       "url": "http://localhost:3000"
     }
   ],
-  "paths": {
-    "/users": {
-      "get": {
-        "summary": "Mengambil daftar pengguna",
-        "description": "Mengambil daftar pengguna yang terdaftar",
-        "responses": {
-          "200": {
-            "description": "Daftar pengguna berhasil diambil",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/User"
-                  }
+                paths: {
+                    // --- Uploader Routes ---
+                    "/uploader": {
+                        post: {
+                            tags: ["Uploader"],
+                            summary: "Upload File",
+                            description: "Upload file gambar, video, audio, atau PDF (Maksimal 20MB).",
+                            requestBody: {
+                                content: {
+                                    "multipart/form-data": {
+                                        schema: {
+                                            type: "object",
+                                            properties: {
+                                                file: {
+                                                    type: "string",
+                                                    format: "binary"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            responses: {
+                                200: { description: "Berhasil upload file" }
+                            }
+                        }
+                    },
                 }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
+            };
