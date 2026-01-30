@@ -78,7 +78,7 @@
         }
       }
     },
-    "/api/otakudesearch": {
+    "/api/otakudesusearch": {
       "get": {
         "tags": ["Anime"],
         "summary": "",
@@ -100,7 +100,7 @@
         }
       }
     },
-    "/api/otakudedetails": {
+    "/api/otakudesudetails": {
       "get": {
         "tags": ["Anime"],
         "summary": "",
@@ -123,6 +123,96 @@
       }
     },
     "/api/otakudesuongoing": {
+      "get": {
+        "tags": ["Anime"],
+        "summary": "",
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "Berhasil mengambil data."
+          }
+        }
+      }
+    },
+    "/api/nimegamisearch": {
+      "get": {
+        "tags": ["Anime"],
+        "summary": "",
+        "description": "",
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Berhasil mengambil data."
+          }
+        }
+      }
+    },
+    "/api/nimegamidetails": {
+      "get": {
+        "tags": ["Anime"],
+        "summary": "",
+        "description": "",
+        "parameters": [
+          {
+            "name": "url",
+            "in": "url",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Berhasil mengambil data."
+          }
+        }
+      }
+    },
+    "/api/nimegamiongoing": {
+      "get": {
+        "tags": ["Anime"],
+        "summary": "",
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "Berhasil mengambil data."
+          }
+        }
+      }
+    },
+    "/api/kusonimesearch": {
+      "get": {
+        "tags": ["Anime"],
+        "summary": "",
+        "description": "",
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Berhasil mengambil data."
+          }
+        }
+      }
+    },
+    "/api/kusonimelatest": {
       "get": {
         "tags": ["Anime"],
         "summary": "",
@@ -212,6 +302,94 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Berhasil mengambil data."
+          }
+        }
+      }
+    },
+    "/api/fmodsearch": {
+      "get": {
+        "tags": ["Search"],
+        "summary": "",
+        "description": "",
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Berhasil mengambil data."
+          }
+        }
+      }
+    },
+    "/api/createqr": {
+      "get": {
+        "tags": ["Other"],
+        "summary": "",
+        "description": "",
+        "parameters": [
+          {
+            "name": "text",
+            "in": "text",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Berhasil mengambil data."
+          }
+        }
+      }
+    },
+    "/api/ssweb": {
+      "get": {
+        "tags": ["Other"],
+        "summary": "",
+        "description": "",
+        "parameters": [
+          {
+            "name": "url",
+            "in": "url",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Berhasil mengambil data."
+          }
+        }
+      }
+    },
+    "/api/uuid": {
+      "get": {
+        "tags": ["Other"],
+        "summary": "",
+        "description": "",
+        "parameters": [
+          {
+            "name": "length",
+            "in": 1,
+            "required": true,
+            "schema": {
+              "type": "number"
             }
           }
         ],
