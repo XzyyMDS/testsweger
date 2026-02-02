@@ -437,28 +437,6 @@
         }
       }
     },
-    "/api/fmodsearch": {
-      "get": {
-        "tags": ["Search"],
-        "summary": "",
-        "description": "",
-        "parameters": [
-          {
-            "name": "q",
-            "in": "query",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Berhasil mengambil data."
-          }
-        }
-      }
-    },
     "/api/createqr": {
       "get": {
         "tags": ["Other"],
