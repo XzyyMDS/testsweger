@@ -249,6 +249,128 @@
         }
       }
     },
+    "/api/playstore": {
+      "get": {
+        "tags": ["APK"],
+        "summary": "",
+        "description": "",
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Berhasil mengambil data."
+          }
+        }
+      }
+    },
+    "/api/fmodsearch": {
+      "get": {
+        "tags": ["APK"],
+        "summary": "",
+        "description": "",
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Berhasil mengambil data."
+          }
+        }
+      }
+    },
+    "/api/fmoddetails": {
+      "get": {
+        "tags": ["APK"],
+        "summary": "",
+        "description": "",
+        "parameters": [
+          {
+            "name": "url",
+            "in": "url",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Berhasil mengambil data."
+          }
+        }
+      }
+    },
+    "/api/fmodlatest": {
+      "get": {
+        "tags": ["APK"],
+        "summary": "",
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "Berhasil mengambil data."
+          }
+        }
+      }
+    },
+    "/api/modyolosearch": {
+      "get": {
+        "tags": ["APK"],
+        "summary": "",
+        "description": "",
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Berhasil mengambil data."
+          }
+        }
+      }
+    },
+    "/api/modyolodetails": {
+      "get": {
+        "tags": ["Search"],
+        "summary": "",
+        "description": "",
+        "parameters": [
+          {
+            "name": "url",
+            "in": "url",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Berhasil mengambil data."
+          }
+        }
+      }
+    },
     "/api/npmsearch": {
       "get": {
         "tags": ["Search"],
@@ -272,28 +394,6 @@
       }
     },
     "/api/pinterest": {
-      "get": {
-        "tags": ["Search"],
-        "summary": "",
-        "description": "",
-        "parameters": [
-          {
-            "name": "q",
-            "in": "query",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Berhasil mengambil data."
-          }
-        }
-      }
-    },
-    "/api/playstore": {
       "get": {
         "tags": ["Search"],
         "summary": "",
