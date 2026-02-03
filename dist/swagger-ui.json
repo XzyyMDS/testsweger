@@ -103,6 +103,28 @@
         }
       }
     },
+    "/api/spotifydl": {
+      "get": {
+        "tags": ["Downloader"],
+        "summary": "",
+        "description": "",
+        "parameters": [
+          {
+            "name": "url",
+            "in": "url",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Berhasil mengambil data."
+          }
+        }
+      }
+    },
     "/api/otakudesusearch": {
       "get": {
         "tags": ["Anime"],
