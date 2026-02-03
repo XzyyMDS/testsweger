@@ -466,7 +466,7 @@
         "description": "",
         "parameters": [
           {
-            "name": "text",
+            "name": "q",
             "in": "query",
             "required": true,
             "schema": {
