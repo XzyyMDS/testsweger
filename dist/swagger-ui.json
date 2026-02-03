@@ -467,7 +467,7 @@
         "parameters": [
           {
             "name": "text",
-            "in": "text",
+            "in": "query",
             "required": true,
             "schema": {
               "type": "string"
@@ -489,7 +489,7 @@
         "parameters": [
           {
             "name": "url",
-            "in": "url",
+            "in": "query",
             "required": true,
             "schema": {
               "type": "string"
@@ -511,7 +511,7 @@
         "parameters": [
           {
             "name": "length",
-            "in": 1,
+            "in": "query",
             "required": true,
             "schema": {
               "type": "number"
