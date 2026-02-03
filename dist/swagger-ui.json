@@ -23,7 +23,7 @@
         "parameters": [
           {
             "name": "url",
-            "in": "url",
+            "in": "query",
             "required": true,
             "schema": {
               "type": "string"
@@ -45,7 +45,7 @@
         "parameters": [
           {
             "name": "url",
-            "in": "url",
+            "in": "query",
             "required": true,
             "schema": {
               "type": "string"
@@ -67,7 +67,7 @@
         "parameters": [
           {
             "name": "url",
-            "in": "url",
+            "in": "query",
             "required": true,
             "schema": {
               "type": "string"
@@ -89,7 +89,7 @@
         "parameters": [
           {
             "name": "url",
-            "in": "url",
+            "in": "query",
             "required": true,
             "schema": {
               "type": "string"
@@ -111,7 +111,7 @@
         "parameters": [
           {
             "name": "url",
-            "in": "url",
+            "in": "query",
             "required": true,
             "schema": {
               "type": "string"
@@ -155,7 +155,7 @@
         "parameters": [
           {
             "name": "url",
-            "in": "url",
+            "in": "query",
             "required": true,
             "schema": {
               "type": "string"
@@ -211,7 +211,7 @@
         "parameters": [
           {
             "name": "url",
-            "in": "url",
+            "in": "query",
             "required": true,
             "schema": {
               "type": "string"
@@ -323,7 +323,7 @@
         "parameters": [
           {
             "name": "url",
-            "in": "url",
+            "in": "query",
             "required": true,
             "schema": {
               "type": "string"
@@ -379,7 +379,7 @@
         "parameters": [
           {
             "name": "url",
-            "in": "url",
+            "in": "query",
             "required": true,
             "schema": {
               "type": "string"
